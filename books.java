@@ -6,12 +6,11 @@ public class books {
  
     Scanner input = new Scanner(System.in);
  
-    // Method 1
-    //  To compare books
+   
     public int compareBookObjects(book b1, book b2)
     {
  
-        // If book name matches
+       
         if (b1.bookName.equalsIgnoreCase(b2.bookName)) {
  
             // Printing book exists
@@ -56,8 +55,7 @@ public class books {
         }
     }
  
-    // Method 3
-    // To search book by serial number
+   
     public void searchBySno()
     {
  
@@ -127,14 +125,12 @@ public class books {
             }
         }
  
-        // Else no book matches for author
+       
         if (flag == 0)
             System.out.println("No Books of " + authorName
                                + " Found.");
     }
  
-    // Method 5
-    // To display all books
     public void showAllBooks()
     {
  
@@ -153,8 +149,6 @@ public class books {
         }
     }
  
-    // Method 6
-    // To edit the book
     public void upgradeBookQty()
     {
  
@@ -204,8 +198,7 @@ public class books {
             "-------------------------------------------------------------------------------------------------------");
     }
  
-    // Method 8
-    // To search the library
+   
     public int isAvailable(int sNo)
     {
  
@@ -227,8 +220,6 @@ public class books {
         return -1;
     }
  
-    // Method 9
-    // To remove the book from the library
     public book checkOutBook()
     {
  
@@ -245,8 +236,7 @@ public class books {
         return null;
     }
  
-    // Method 10
-    // To add the Book to the Library
+
     public void checkInBook(book b)
     {
         for (int i = 0; i < count; i++) {
