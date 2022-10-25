@@ -7,8 +7,7 @@ public class students {
 	 
 	    public static int count = 0;
 	 
-	    // Method 1
-	    // To add books
+	   
 	    public void addStudent(student s)
 	    {
 	        for (int i = 0; i < count; i++) {
@@ -31,12 +30,9 @@ public class students {
 	        }
 	    }
 	 
-	    // Method 2
-	    // Displaying all students
 	    public void showAllStudents()
 	    {
-	        // Printing student name and
-	        // corresponding registered number
+	        
 	        System.out.println("Student Name\t\tReg Number");
 	        for (int i = 0; i < count; i++) {
 	 
@@ -46,11 +42,10 @@ public class students {
 	        }
 	    }
 	 
-	    // Method 3
-	    // To check the Student
+	   
 	    public int isStudent()
 	    {
-	        // Display message only
+	       
 	        System.out.println("Enter Reg Number:");
 	 
 	        String regNum = input.nextLine();
@@ -63,15 +58,14 @@ public class students {
 	            }
 	        }
 	 
-	        // Print statements
+	      
 	        System.out.println("Student is not Registered.");
 	        System.out.println("Get Registered First.");
 	 
 	        return -1;
 	    }
 	 
-	    // Method 4
-	    // To remove the book
+	   
 	    public void checkOutBook(books book)
 	    {
 	        int studentIndex = this.isStudent();
@@ -108,14 +102,13 @@ public class students {
 	        }
 	    }
 	 
-	    // Method 5
-	    // To add the book
+	 
 	    public void checkInBook(books book)
 	    {
 	        int studentIndex = this.isStudent();
 	        if (studentIndex != -1) {
 	 
-	            // Printing credentials corresponding to student
+	            
 	            System.out.println(
 	                "S.No\t\t\tBook Name\t\t\tAuthor Name");
 	 
@@ -129,7 +122,7 @@ public class students {
 	                    + s.borrowedBooks[i].authorName);
 	            }
 	 
-	            // Display message only
+	           
 	            System.out.println(
 	                "Enter Serial Number of Book to be Checked In:");
 	 
