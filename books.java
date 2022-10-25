@@ -13,13 +13,13 @@ public class books {
        
         if (b1.bookName.equalsIgnoreCase(b2.bookName)) {
  
-            // Printing book exists
+          
             System.out.println(
                 "Book of this Name Already Exists.");
             return 0;
         }
  
-        // if book serial matches
+       
         if (b1.sNo == b2.sNo) {
  
             // Print book exists
@@ -31,8 +31,7 @@ public class books {
         return 1;
     }
  
-    // Method 2
-    // To add book
+  
     public void addBook(book b)
     {
  
@@ -59,12 +58,11 @@ public class books {
     public void searchBySno()
     {
  
-        // Display message
+      
         System.out.println(
             "\t\t\t\tSEARCH BY SERIAL NUMBER\n");
- 
-        // Class data members
-        int sNo;
+
+	int sNo;
         System.out.println("Enter Serial No of Book:");
         sNo = input.nextInt();
  
@@ -89,12 +87,10 @@ public class books {
                                + sNo + " Found.");
     }
  
-    // Method 4
-    // To search author by name
+  
     public void searchByAuthorName()
     {
  
-        // Display message
         System.out.println(
             "\t\t\t\tSEARCH BY AUTHOR'S NAME");
  
@@ -110,7 +106,7 @@ public class books {
  
         for (int i = 0; i < count; i++) {
  
-            // if author matches any of its book
+            
             if (authorName.equalsIgnoreCase(
                     theBooks[i].authorName)) {
  
@@ -175,8 +171,7 @@ public class books {
         }
     }
  
-    // Method 7
-    // To create menu
+    
     public void dispMenu()
     {
  
